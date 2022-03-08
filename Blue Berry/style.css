@@ -1,0 +1,41 @@
+.breadcrumb{
+    text-align: left;
+  }
+  .breadcrumb li{
+    display: inline;
+  }
+  .breadcrumb a {
+    float: left;
+    color: #000;
+    background:#fff ;
+    text-decoration: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 0 5px;
+  }
+  .breadcrumb a:hover{
+   color: crimson;
+    }
+  .attribute a{
+    color: teal;
+  }
+  .breadcrumb .attribute a {
+    background-color: inherit;
+  }
+  .breadcrumb .location a::before{
+    content: "";
+    border-color: lightblue;
+    border-left-color: transparent;
+      }
+      
+  .breadcrumb .location a::after {
+    left: 100%;
+    border-color: transparent;
+    }
+  .breadcrumb li.location+li.location ::before{
+  content: "/";
+  }
+    
